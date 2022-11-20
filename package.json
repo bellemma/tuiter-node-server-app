@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "name": "tuiter-node-server-app",
+  "version": "1.0.0",
+  "description": "node.js web server for tuiter app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bellemma/tuiter-node-server-app.git"
+  },
+  "keywords": [
+    "node",
+    "REST",
+    "http",
+    "Server"
+  ],
+  "author": "Emma Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bellemma/tuiter-node-server-app/issues"
+  },
+  "homepage": "https://github.com/bellemma/tuiter-node-server-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^1.9.0"
+  }
+}

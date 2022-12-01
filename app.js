@@ -7,7 +7,10 @@ import UserController
 import TuitsController
   from "./controllers/tuits/tuit-controller.js";
 import mongoose from "mongoose";
-
+app.listen(process.env.PORT || 4000);
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
+    || 'mongodb://localhost:27017/tuiter'
+mongoose.connect(CONNECTION_STRING);
 
 const app = express()
 app.use(express.json()); // parse JSON from http req body
@@ -16,7 +19,3 @@ HelloController(app);
 UserController(app);
 TuitsController(app);
 
-app.listen(process.env.PORT || 4000);
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
-    || 'mongodb://localhost:27017/tuiter'
-mongoose.connect(CONNECTION_STRING);

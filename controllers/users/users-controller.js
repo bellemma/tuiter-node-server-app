@@ -1,13 +1,7 @@
 import people from './users.js'
 let users = people
 
-const UserController = (app) => {
-  app.get('/api/users', findUsers)
-  app.get('/api/users/:uid', findUserById);
-  app.post('/api/users', createUser);
-  app.delete('/api/users/:uid', deleteUser);
-  app.put('/api/users/:uid', updateUser);
-}
+
 
 const findUsers = (req, res) => {
   const type = req.query.type
@@ -53,4 +47,6 @@ const updateUser = (req, res) => {
 }
 
 
-export default UserController
+module.exports = {
+  findUserById, findUsers, createUser, deleteUser, updateUser
+}

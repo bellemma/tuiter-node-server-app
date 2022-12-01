@@ -26,7 +26,7 @@ const updateTuit = async (req, res) => {
  const tuitdIdToUpdate = req.params.tid;
  const updates = req.body;
  const status = await tuitsDao.updateTuit(tuitdIdToUpdate, updates);
- res.sendStatus(status);
+ res.sendStatus(200);
 }
 
 

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const schema = mongoose.schema({
+const schema = mongoose.Schema({
   tuit: String,
   likes: Number,
   liked: Boolean,
